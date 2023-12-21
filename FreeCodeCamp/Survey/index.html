@@ -1,0 +1,65 @@
+<!DOCTYPE=html>
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h1 id="title">Getaway Places in Asia Survey</h1>
+
+    <p id="description">Please take a moment to share your thoughts on your favorite getaway places in Asia.</p>
+
+    <form id="survey-form">
+
+        <label for="name" id="name-label">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Your Age:</label>
+        <input type="number" id="number" placeholder="Enter your age" min="18" max="100" required>
+
+        <label for="dropdown">Select Your Favorite Country in Asia:</label>
+        <select id="dropdown">
+            <option value="japan">Japan</option>
+            <option value="thailand">Thailand</option>
+            <option value="maldives">Maldives</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label>Choose Your Favorite Type of Getaway:</label>
+        <div>
+            <label>
+                <input type="radio" name="getaway-type" value="beach"> Beach
+            </label>
+            <label>
+                <input type="radio" name="getaway-type" value="mountain"> Mountain
+            </label>
+            <!-- Add more radio buttons as needed -->
+        </div>
+
+        <label>Choose Your Favorite Activities:</label>
+        <div>
+            <label>
+                <input type="checkbox" name="activities" value="hiking"> Hiking
+            </label>
+            <label>
+                <input type="checkbox" name="activities" value="snorkeling"> Snorkeling
+            </label>
+            <!-- Add more checkboxes as needed -->
+        </div>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Share your thoughts..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
